@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>YELYPAY</title>
+    <link
+      rel="icon"
+      href="https://stage.yelypay.com/merchant/assets/img/yelypay-logo.svg"
+    />
+    <link rel="stylesheet" href="header.css" />
+    <link rel="stylesheet" href="registerpage.css" />
+  </head>
+  <body>
+    <header>
+      <div>
+        <div id="logo">
+          <img
+            src="https://stage.yelypay.com/merchant/assets/img/yelypay-logo.svg"
+            alt="YELYPAY"
+          />
+        </div>
+        <nav>
+          <a class="nav-item" href="#">Home</a>
+          <a class="nav-item" href="#">Merchant</a>
+          <a class="nav-item" href="#">Tools</a>
+          <a class="nav-item" href="#">Blogs</a>
+          <a class="nav-item" href="#">Contact US</a>
+        </nav>
+        <nav class="credentials">
+          <a class="nav-item" href="D:\web\gowtham project\login page.html">Sign In</a>
+          <a class="nav-item" href="#">Get Started</a>
+        </nav>
+      </div>
+    </header>
+    <div class="cl">
+      <div class="heading">
+        <h1>
+          Welcome to the future of <br />
+          business with crypto.
+        </h1>
+        <p>
+          You are 3 simple steps away from accepting crypto payments in your
+          business <br />
+          today. Get started now.
+        </p>
+      </div>
+    </div>
+    <form>
+      <p class="regg">Registration</p>
+      <div class="fl">
+        <div class="frt">
+          <p>Full name*</p>
+          <input id=nam type="text" placeholder="Enter full name" onkeyup="validateName()" />
+          <span id="namec"></span>
+          <p>Email*</p>
+          <input id="mail" type="email" placeholder="Enter email" onkeyup="validateEmail()"  />
+          <span id="email"></span>
+
+        </div>
+        <div class="scnd">
+          <p>Mobile number*</p>
+          <input id="nu" type="tel" placeholder="0875346299" maxlength="10" onkeypress="return isNumberKey(event)" onkeyup="validateNumber()" />
+          <span id="num"></span>
+
+          <p>Password*</p>
+          <input id="pp" type="password" placeholder="Enter password" onkeyup="validatePW()" />
+          <span id="pw"></span>
+
+        </div>
+      </div>
+      <input type="checkbox" value="lsterms" id="terms"><label for="terms" id="aa" >  I agree to the <span class="ss"> Terms of Conditions </span> and <span class="ss">Privacy Policy</span> </label>
+      
+    </form>     
+    
+    <div class="sign"><a href="#" onclick="signIp()" > <p> Sign Up </p></a> </div>
+  </body>
+  <script src="reg page.js"></script>
+</html>

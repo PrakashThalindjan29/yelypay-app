@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>YELYPAY</title>
+    <link
+      rel="icon"
+      href="https://stage.yelypay.com/merchant/assets/img/yelypay-logo.svg"
+    />
+    <link rel="stylesheet" href="header.css" />
+    <link rel="stylesheet" href="forgetpw.css" />
+  </head>
+  <body>
+    <header>
+      <div>
+        <div id="logo">
+          <img
+            src="https://stage.yelypay.com/merchant/assets/img/yelypay-logo.svg"
+            alt="YELYPAY"
+          />
+        </div>
+        <nav>
+          <a class="nav-item" href="#">Home</a>
+          <a class="nav-item" href="#">Merchant</a>
+          <a class="nav-item" href="#">Tools</a>
+          <a class="nav-item" href="#">Blogs</a>
+          <a class="nav-item" href="#">Contact US</a>
+        </nav>
+        <nav class="credentials">
+          <a class="nav-item" href="D:\web\gowtham project\login page.html"
+            >Sign In</a
+          >
+          <a class="nav-item" href="D:\web\gowtham project\register page.html"
+            >Get Started</a
+          >
+        </nav>
+      </div>
+    </header>
+    <div class="bd">
+      <p class="pw">Password Reset</p>
+      <p class="em">Email*</p>
+      <input
+        id="pw"
+        type="email"
+        placeholder="Enter email"
+        onkeyup="validateEmail()"
+      />
+    </div>      <span id="errormsg"></span>
+
+    <div class="res">
+      <a href="#" class="reset" onclick="reset()"><p>Reset</p></a>
+    </div>
+    <div style="margin-top: 13px">
+      <a href="D:\web\gowtham project\login page.html" class="back"
+        >Go Back To Login Page</a
+      >
+    </div>
+  </body>
+  <script>
+    var emailField = document.getElementById("pw");
+    var emailError = document.getElementById("errormsg");
+    function validateEmail() {
+      if (
+        !emailField.value.match(/^[A-Za-z\._\-0-9]*[@][A-Za-z]*[\.][a-z]{2,4}$/)
+      ) {
+        emailError.innerHTML = "Please enter the valid email";
+        return false;
+      }
+
+      emailError.innerHTML = "";
+      return true;
+    }
+    function reset(){
+        if(validateEmail()==true){
+            alert("Password Reset. Please check your mail.");
+            emailField.value="";
+        }
+    }
+  </script>
+</html>

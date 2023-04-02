@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+body {
+    background: linear-gradient(108.02deg,#e2ecff 11.65%,#fff 68.68%);  }
+.bd{
+    
+    margin-top: 150px;
+    margin-left: 750px;
+}
+.pw{
+    font-size: 20px;
+    font-weight: 600;
+    margin-left: 100px;
+}
+.em{
+    font-weight: 500;
+    margin-top: 30px;
+}
+input{
+    width: 350px;
+    padding-top: 8px;
+    font-size: 15px;
+    box-sizing: border-box;
+    margin-bottom: 16px;
+    outline: none;
+    letter-spacing: 1px;
+    margin: 0 0 30px;
+    border: 1px solid #8189c1;
+    box-shadow: 0 0 0 1px #e9e9e9;
+}
+
+.reset{
+    text-decoration: none;
+    border-radius: 20px;
+    width: 140px;
+    height: 35px;
+    background-color: rgb(6, 6, 8);
+    color: white;
+}
+.res{
+    background-color: blue;
+    color: white;
+    border-radius: 20px;
+    width: 140px;
+    height: 35px;
+    margin-left: 850px;
+}
+.res p{
+    margin-left: 45px;
+    margin-bottom: -20px;
+    font-weight: 600;
+    position: absolute;
+    margin-top: 5px;
+}
+.back{
+    margin-left: 830px;
+    font-size: 15px;
+    font-weight: 600;
+    text-decoration: none;
+    color: blue;
+    
+}
+#errormsg{
+   
+    color: red;
+    font-size: 13px;
+    margin-left: 750px;
+    margin-top: -26px;
+    position: absolute;
+}
+
+@media screen and (max-width: 800px) {
+    
+    .bd{
+    margin-left: 20px;
+        margin-top: 150px;
+    }
+    .pw{
+        font-size: 15px;
+        font-weight: 600;
+        margin-left: 10px;
+        
+    }
+    .em{
+        font-weight: 500;
+        margin-top: 30px;
+        font-size: 13px;
+        margin-left: 10px;
+    }
+    input{
+        width: 250px;
+        padding-top: 8px;
+        font-size: 15px;
+        box-sizing: border-box;
+        margin-bottom: 16px;
+        outline: none;
+        letter-spacing: 1px;
+        margin: 0 0 30px 10px;
+        border: 1px solid #8189c1;
+        box-shadow: 0 0 0 1px #e9e9e9;
+    }
+    .res{
+        background-color: blue;
+        color: white;
+        border-radius: 20px;
+        width: 120px;
+        height: 35px;
+        margin-left: 50px;
+    }
+    .res p{
+        margin-left: 35px;
+        margin-bottom: -20px;
+        font-weight: 600;
+        position: absolute;
+        margin-top: 5px;
+    }
+    .back{
+        margin-left: 50px;
+        font-size: 10px;
+        font-weight: 600;
+        text-decoration: none;
+        color: blue;
+        width: 500px;
+        
+    }
+    body{
+        overflow-x: hidden;
+    }
+}

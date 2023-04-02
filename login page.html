@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>YELYPAY</title>
+    <link
+      rel="icon"
+      href="https://stage.yelypay.com/merchant/assets/img/yelypay-logo.svg"/>
+    <link rel="stylesheet" href="header.css" />
+    <link rel="stylesheet" href="loginpage.css">
+  </head>
+  <body>
+    <header>
+      <div>
+        <div id="logo">
+          <img
+            src="https://stage.yelypay.com/merchant/assets/img/yelypay-logo.svg"
+            alt="YELYPAY"
+          />
+        </div>
+        <nav>
+          <a class="nav-item" href="#">Home</a>
+          <a class="nav-item" href="#">Merchant</a>
+          <a class="nav-item" href="#">Tools</a>
+          <a class="nav-item" href="#">Blogs</a>
+          <a class="nav-item" href="#">Contact US</a>
+        </nav>
+        <nav class="credentials">
+          <a class="nav-item" href="#">Sign In</a>
+          <a class="nav-item" href="D:\web\gowtham project\register page.html">Get Started</a>
+        </nav>
+      </div>
+    </header>
+    <main>
+        <form id="login-form">
+            <h3>Login</h3>
+           
+            <p id="lab">Email*</p>
+            <input id="email" type="email" spellcheck="false" placeholder="Enter Mail" onkeyup="validateEmail()"  >
+            <span id="errormsg"></span>
+
+            <p>Password*</p>
+            <input id="password" type="password" name="password" placeholder="Enter Password" spellcheck="false" onkeyup="validatePW()">
+            <span id="errorpw"></span>
+
+             <input type="checkbox" value="lsRememberMe" id="rememberMe"><label for="rememberMe"> Remember me</label>
+             <a href="D:\web\gowtham project\forget pw.html" class="forget">Forget password?</a>
+             <a href="#" class="login"><p class="in" onclick="login()">Login</p> </a>
+             <p class="aa">Not a member yet?</p>
+             <a href="D:\web\gowtham project\register page.html" class="reg">Register</a>
+        </form>
+    </div>
+    </main>
+  </body>
+  <script src="login.js"></script>
+</html>
